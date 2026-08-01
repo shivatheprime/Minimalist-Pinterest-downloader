@@ -1,0 +1,8 @@
+{
+  "name": "Pinterest Downloader",
+  "description": "A premium SaaS product for downloading Pinterest videos, images, and GIFs in full quality without watermarks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
