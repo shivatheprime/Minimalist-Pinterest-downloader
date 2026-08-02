@@ -45,9 +45,6 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} PINVAULT STUDIO. ALL RIGHTS RESERVED.
           </p>
-          <div className="flex space-x-8">
-            <a href="#" className="hover:text-[#111111] dark:hover:text-white transition-colors">Status: Operational</a>
-          </div>
         </div>
       </div>
     </footer>
