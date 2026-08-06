@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -14,12 +14,12 @@ export default function Navbar() {
     
     // Theme logic
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setTheme('dark');
-      document.documentElement.classList.add('dark');
-    } else {
+    if (savedTheme === 'light') {
       setTheme('light');
       document.documentElement.classList.remove('dark');
+    } else {
+      setTheme('dark');
+      document.documentElement.classList.add('dark');
     }
     
     return () => window.removeEventListener('scroll', handleScroll);
@@ -59,16 +59,16 @@ export default function Navbar() {
             <a href="#" className="text-[#111111] dark:text-white border-b border-[#D4AF37] pb-1">
               Pinterest Video
             </a>
-            <a href="#" className="hover:text-[#D4AF37] transition-colors">
+            <a href="#" className="text-[#111111] dark:text-white border-b border-[#D4AF37] pb-1">
               Pinterest Image
             </a>
-            <a href="#" className="hover:text-[#D4AF37] transition-colors">
+            <a href="#" className="text-[#111111] dark:text-white border-b border-[#D4AF37] pb-1">
               YouTube Thumbnail
             </a>
-            <Link to="/all-tools" className="hover:text-[#D4AF37] transition-colors">
+            <Link to="/all-tools" className="text-[#111111] dark:text-white border-b border-[#D4AF37] pb-1">
               All Tools
             </Link>
-            <Link to="/blog" className="hover:text-[#D4AF37] transition-colors">
+            <Link to="/blog" className="text-[#111111] dark:text-white border-b border-[#D4AF37] pb-1">
               Blog
             </Link>
           </nav>
