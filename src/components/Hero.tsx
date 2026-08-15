@@ -118,7 +118,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-gray-400 dark:text-gray-500 text-lg max-w-xl mx-auto leading-relaxed mb-12">
-            The definitive tool for creative professionals to archive Pinterest content or YouTube thumbnails in full resolution. No logins. No friction. Just quality.
+            Download Pinterest Images & Videos and YouTube Thumbnails — Free & in Full Quality.
           </p>
         </motion.div>
 

@@ -11,6 +11,9 @@ import Home from './pages/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import AllTools from './pages/AllTools';
 import Blog from './pages/Blog';
+import AgeCalculator from './pages/AgeCalculator';
+import BmiCalculator from './pages/BmiCalculator';
+import CalorieCalculator from './pages/CalorieCalculator';
 
 export default function App() {
   return (
@@ -23,6 +26,9 @@ export default function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/all-tools" element={<AllTools />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/age-calculator" element={<AgeCalculator />} />
+          <Route path="/bmi-calculator" element={<BmiCalculator />} />
+          <Route path="/calorie-calculator" element={<CalorieCalculator />} />
         </Routes>
 
         <Footer />
