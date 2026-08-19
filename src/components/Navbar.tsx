@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -14,12 +14,12 @@ export default function Navbar() {
     
     // Theme logic
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-      setTheme('light');
-      document.documentElement.classList.remove('dark');
-    } else {
+    if (savedTheme === 'dark') {
       setTheme('dark');
       document.documentElement.classList.add('dark');
+    } else {
+      setTheme('light');
+      document.documentElement.classList.remove('dark');
     }
     
     return () => window.removeEventListener('scroll', handleScroll);
